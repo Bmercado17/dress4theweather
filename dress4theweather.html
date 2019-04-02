@@ -17,24 +17,31 @@
   </head>
   <body>
     <div class="container">
-      <div class="fancy">
-        <h1>Welcome to dress for the weather</h1>
+      <div class="flex-container">
+        <div class="fancy">
+          <h1>Welcome to dress for the weather</h1>
+        </div>
       </div>
-      <div class="flex-container">>
-          <img src=".//images/inthesnow.jpg" alt="supercold and thirsty" height="450px" >
-          <img src=".//images/shortsinthesnow.jpg" alt="cold" height="450px">
+      <div class="flex-container">
+          <img src=".//images/inthesnow.jpg" alt="supercold and thirsty" height="450px" hspace="20" >
+          <img src=".//images/shortsinthesnow.jpg" alt="cold" height="450px" hspace="20">
       </div>
-      <div class="fancy">
-        <h2>Don't be these people :( let us help you plan for your day.</h2>
+      <div class="flex-container">
+        <div class="fancy">
+          <h2>Don't be these people :( let us help you plan for your day.</h2>
+        </div>
       </div>
     </div>
-
-      <form id="zipcode-enter">
-        <div class="form-group">
-          <label for="zip">Enter your zip code:</label>
-          <input id="zip" type="number">
-        </div>
+    <div class="container">
+      <div class="flex-container">
+        <form id="zipcode-enter">
+          <div class="form-group">
+            <label for="zip">Enter your zip code:</label><br>
+            <input id="zip" type="number">
+          </div>
           <button id="button" type="submit" class="btn">Submit</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
