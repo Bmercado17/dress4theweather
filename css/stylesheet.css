@@ -21,7 +21,7 @@ h1 {
     color: #A9A9A9;
     border-radius: 15px 50px;
     background: orange;
-    padding: 20px; 
+    padding: 20px;
     width: 1000px;
     height: 75px;
 }
@@ -51,7 +51,7 @@ overflow: hidden;
 
 &:first-child{
 border-radius:3px 0 0 0;
-} 
+}
 &:last-child{
 border-radius:0 3px  0 0;
 }
@@ -120,7 +120,7 @@ span{
 display: block;
 
 }
-}  	
+}
 }
 }
 }
@@ -195,3 +195,4 @@ transform:translateY(16px)rotate(270deg);
 }
 }
 }
+KYLE
