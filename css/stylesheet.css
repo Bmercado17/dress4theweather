@@ -1,9 +1,49 @@
+/*
+.fancy h1 {
+  text-align: center;
+} */
+body {
+  background-image: url('https://media.giphy.com/media/TRjQlKBURMA5G/giphy.gif');
+  background-size: cover;
+  height: 100%;
+}
 
-h1 {
+.form-group {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+.btn {
+    color: #A9A9A9;
+    border-radius: 15px 50px;
+    background: orange;
+    padding: 20px;
+    width: 1000px;
+    height: 75px;
+}
+.fancy {
     text-align: center;
     margin-bottom: 20px;
+    color: white;
+    font-family: 'Michroma', sans-serif;
+    font-weight: bold;
 }
-@media (max-width: 1350px) {
+
+#zipcode-enter {
+  color: lightblue;
+  font-size: 32px;
+  font-family: 'Baloo Chettan', cursive;
+}
+
+#button {
+  border-radius: 40px 70px;
+  font-family: 'Michroma', sans-serif;
+  font-size: 24px;
+  color: black;
+  letter-spacing: 5px;
+}
+/* @media (max-width: 1350px) {
     body {
       background-color: lightblue;
     }
@@ -11,29 +51,17 @@ h1 {
 @media (min-width: 600px) {
     body {
         background-color: gray;
-    }
-}
-.form-group {
-    margin-left: 10px;
-    margin-top: 10px;
-}
-.btn {
-    color: #A9A9A9;
-    border-radius: 15px 50px;
-    background: orange;
-    padding: 20px; 
-    width: 1000px;
-    height: 75px;
-}
-.second-h2 {
+    } */
+
+/* .second-h2 {
     text-align: center;
     margin-left: 20%;
-}
-@blue: #626E7E;
+} */
+/* @blue: #626E7E;
 @light: lighten(@blue, 40%);
-@light2: darken(@light, 3%);
+@light2: darken(@light, 3%); */
 
-table{
+/* table{
 font-family:sans-serif;
 width: 100%;
 border-spacing: 0;
@@ -51,7 +79,7 @@ overflow: hidden;
 
 &:first-child{
 border-radius:3px 0 0 0;
-} 
+}
 &:last-child{
 border-radius:0 3px  0 0;
 }
@@ -120,7 +148,7 @@ span{
 display: block;
 
 }
-}  	
+}
 }
 }
 }
@@ -194,4 +222,4 @@ transform:translateY(16px)rotate(270deg);
 }
 }
 }
-}
+} */
