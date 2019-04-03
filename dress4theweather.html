@@ -8,13 +8,15 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/stylesheet.css" />
+  <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="javascript/scripts.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
 </head>
 <body>
   <div class="container-fluid">
-    <h1>Welcome to dress for the weather</h1>
+    <h1 class="fancy">Welcome to dress for the weather</h1>
     <div class="row">
       <div class="col col-md-7">
         <img src=".//images/inthesnow.jpg" alt="freezing people, way thirsty" height="450px">
@@ -23,21 +25,28 @@
         <img src=".//images/shortsinthesnow.jpg" alt="freezing people, way thirsty" height="450px">
       </div>
       <div class="second-h2">
-      <h2>Dont be these people :( let us help you plan for your day or week.</h2>
+        <h2 class="fancy">Dont be these people :( let us help you plan for your day.</h2>
       </div>
-          <form>
-        
-            <div class="form-group">
-                <label for="formGroupExampleInput2"></label>
-                <input type="text" class="form-control" id="cityName" placeholder="City Name" style="width: 300px;">
-              </div>
-              <div class="form-group">
-                  <label for="formGroupExampleInput2"></label>
-                  <input type="number" min="0" class="form-control" id="Zipcode" placeholder="Zip Code" style="width: 300px;">
-                </div>
-            <button type="button" class="btn btn-secondary" style="width: 300px;">Submit</button>
-          </form>
-     </div>
+      <form>
+        <!-- <div class="AppImages">
+          <img id="spring1" src=".//images/spring1.jpg" alt="application images">
+          <img id="summer1" src=".//images/summer1.jpg" alt="application images">
+          <img id="summer2" src=".//images/summer2.png" alt="application images">
+          <img id="summer3" src=".//images/summer3.jpg" alt="application images">
+          <img id="winter1" src=".//images/winter1.jpg" alt="application images">
+          <img id="winter2" src=".//images/winter2.jpg" alt="application images">
+        </div> -->
+        <div class="form-group">
+          <label for="formGroupExampleInput2"></label>
+          <input type="text" class="form-control" id="cityName" placeholder="City Name" style="width: 300px;">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2"></label>
+          <input type="number" min="0" class="form-control" id="Zipcode" placeholder="Zip Code" style="width: 300px;">
+        </div>
+        <button type="button" class="btn btn-secondary" style="width: 300px;">Submit</button>
+      </form>
+    </div>
   </div>
 </body>
 
