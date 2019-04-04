@@ -1,85 +1,80 @@
 <!DOCTYPE html>
-    <meta charset="UTF-8" />
-    <html>
-<head>
-  <title>Dress for the Weather</title>
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous" />
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/stylesheet.css" />
-  <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="javascript/scripts.js"></script>
-
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-      <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
-      <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
-      <script src="javascript/scripts.js"></script>
-      <script src="javascript/env.js"></script>
-      <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
-<body>
-  <div class="container-fluid">
-    <h1 class="fancy">Welcome to dress for the weather</h1>
-
+<html>
+  <head lang="en" dir="ltr">
+    <meta charset="utf-8">
+    <title>Dress for the Weather</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+    <script
+          src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous"></script>
+    <script src="javascript/scripts.js"></script>
+    <script src="javascript/env.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
     <div class="container">
-      <!-- <div class="fancy">
-<h1>Welcome to dress for the weather</h1>
-</div> -->
-      <div class="row">
-        <div class="col col-md-7">
-          <img src=".//images/inthesnow.jpg" alt="supercold and thirsty" height="450px">
-        </div>
-        <div class="col col-md-5">
-          <img src=".//images/shortsinthesnow.jpg" alt="cold" height="450px">
+      <div class="flex-container">
+        <div class="fancy">
+          <h1>Welcome to dress for the weather</h1>
         </div>
       </div>
-        <!-- <div class="second-h2">
-<h2 class="fancy">Dont be these people :( let us help you plan for your day.</h2>
-</div> -->
-        <form>
-          <!-- <div class="AppImages">
-<img id="spring1" src=".//images/spring1.jpg" alt="application images">
-<img id="summer1" src=".//images/summer1.jpg" alt="application images">
-<img id="summer2" src=".//images/summer2.png" alt="application images">
-<img id="summer3" src=".//images/summer3.jpg" alt="application images">
-<img id="winter1" src=".//images/winter1.jpg" alt="application images">
-<img id="winter2" src=".//images/winter2.jpg" alt="application images">
-</div> -->
+      <div class="flex-container">
+          <img src=".//images/inthesnow.jpg" alt="supercold and thirsty" height="450px" hspace="20" >
+          <img src=".//images/shortsinthesnow.jpg" alt="cold" height="450px" hspace="20">
+      </div>
+      <div class="flex-container">
+        <div class="fancy">
+          <h2>Don't be these people :( let us help you plan for your day.</h2>
+        </div>
+      </div>
+    </div>
 
+    <div class="container">
+      <div class="flex-container">
+        <form id="zipcode-enter">
           <div class="form-group">
-            <label for="formGroupExampleInput2"></label>
-            <input type="text" class="form-control" id="cityName" placeholder="City Name" style="width: 300px;">
+            <label for="zip">Enter your zip code:</label><br>
+            <input id="zip" type="number">
           </div>
-          <div class="form-group">
-            <label for="formGroupExampleInput2"></label>
-            <input type="number" min="0" class="form-control" id="Zipcode" placeholder="Zip Code" style="width: 300px;">
-          </div>
-          <button type="button" class="btn btn-secondary" style="width: 300px;">Submit</button>
+          <button id="button" type="submit" class="btn">Submit</button>
         </form>
-      
-
-    </div>
-    <div class="fancy">
-      <h2>Don't be these people :( let us help you plan for your day.</h2>
+      </div>
     </div>
 
-    <!-- <form id="zipcode-enter">
-<div class="form-group">
-<label for="zip">Enter your zip code:</label>
-<input id="zip" type="number">
-</div>
-<button id="button" type="submit" class="btn">Submit</button> -->
+<!-- Section to display images depending on temperature -->
+    <div class="container">
+      <div id="cold">
+        <div class="flex-container">
+          <div>
+            <img src="http://lorempixel.com/400/200/" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
 
-  </div>
-</body>
+    <div class="container">
+      <div id="moderate">
+        <div class="flex-container">
+          <div>
+            <img src="http://lorempixel.com/400/200/" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="container">
+      <div id="hot">
+        <div class="flex-container">
+          <div>
+            <img src="http://lorempixel.com/400/200/" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
 </html>
