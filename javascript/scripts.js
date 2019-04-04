@@ -24,6 +24,7 @@ $(document).ready(function() {
       $.get('http://api.openweathermap.org/data/2.5/weather?zip=' + zipcode + '&appid=' + apiKey).then(function(response) {
         cTemp=((response.main.temp)-273.15)
         fTemp=((cTemp)*(9/5)+32)
+        console.log(response.name)
         console.log(fTemp);
         if(fTemp >70) {
           $("#hot").show();
@@ -32,6 +33,8 @@ $(document).ready(function() {
         } else {
           $("#cold").show();
         }
+        $("#city").append(response.name)
+        // $("hide-city").show();
       }).fail(function(error) {
         console.log(error.responseJSON.message);
 
