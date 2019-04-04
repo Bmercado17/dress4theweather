@@ -1,34 +1,36 @@
 
 
-@media (max-width: 600px) {
+@media (min-width: 200px) {
     body {
-      background-image: url(https://media.giphy.com/media/KyPXs3nyPvqi4/giphy.gif);
+      background-image: url("https://media.giphy.com/media/KyPXs3nyPvqi4/giphy.gif");
       background-size: cover;
       height: 100%;
     }
   }
-@media (max-width: 799px){
+/* @media (max-width: 1399px){
   body{
     background-color: gray;
   }
-}
-@media (min-width: 800px) {
+} */
+@media (min-width: 1200px) {
     body {
-        background-image: url(https://media.giphy.com/media/xT0wlvGLHmojbeu5vq/giphy.gif);
+        background-image: url("https://media.giphy.com/media/xT0wlvGLHmojbeu5vq/giphy.gif");
         background-size: cover;
         height: 100%;
       }
     }
+@media (min-width: 1700px){
+  body {
+       background-image: url("https://media.giphy.com/media/TRjQlKBURMA5G/giphy.gif");
+       background-size: cover;
+       height:100%;
+  }
+}
 
     #cold, #moderate, #hot {
       display: none;
     }
 
-    body {
-      background-image: url('https://media.giphy.com/media/TRjQlKBURMA5G/giphy.gif');
-      background-size: cover;
-      height: 100%;
-    }
 
     h1 {
       font-size: 48px;
